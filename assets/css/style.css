@@ -1,5 +1,6 @@
+/* General Styles Start */
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -14,6 +15,13 @@ h2 {
 }
 
 h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1px;
+    font-style: italic;
+}
+
+h4 {
     font-size: 20px;
     text-align: center;
     padding: 25px;
@@ -33,13 +41,16 @@ img {
 }
 
 p {
-    padding: 20px;
+    margin-top: 12px;
+    margin-left: 30px;
     display: inline-block;
-    width: 700px;
+    width: 30vw;
 }
 
 
+/* Header & Nav Start */
 header {
+    width: 100vw;
     background-color:peachpuff;
     padding: 50px;
     
@@ -47,48 +58,23 @@ header {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
     background-color: oldlace;
 }
 
 
+/* Main Start*/
 section {
     border: 3px solid black;
-    width: 1000px;
+    width: 50vw;
     justify-content: center;
     margin: 0px 25%;
 }
 
-footer {
-    background-color: oldlace;
-}
-
-
 article {
     margin: 0 15%;
-}
-
-#my-work {
-    display: flex;
-    width: 700px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#first {
-    border: 3px outset darkgrey;
-    margin: 10px;
-    width: 650px;
-    height: auto;
-}
-
-.coming-soon {
-    border: 3px outset darkgrey;
-    justify-content: center;
-    margin: 10px;
-    width: 315px;
-    height: auto;
 }
 
 .about {
@@ -96,4 +82,73 @@ article {
     margin: 10px;
     flex-wrap: wrap;
     flex-direction: row;
+    align-content: center;
+}
+
+.work {
+    display: flex;
+    width: 35vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#first {
+    border: 3px outset darkgrey;
+    margin: 0 10px 10px 10px;
+    width: 35vw;
+    height: auto;
+}
+
+.coming-soon {
+    border: 3px outset darkgrey;
+    justify-content: center;
+    margin: 10px;
+    width: 16.25vw;
+    height: auto;
+}
+
+#contact-info li {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+ /* Main Pseudo-Classes Start */
+.work img:hover {
+     filter: brightness(50%);
+}
+
+
+/* Footer */
+footer {
+    background-color: oldlace;
+}
+
+
+/* Responsive Start */
+@media screen and (max-width: 1604px) {
+    .about {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    img {
+        margin: auto;
+    }
+
+    p {
+        margin: 20px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    nav {
+        flex-flow: column wrap;
+    }
+    li {
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
 }
