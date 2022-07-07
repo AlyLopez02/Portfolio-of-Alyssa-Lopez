@@ -90,6 +90,12 @@ article {
     width: 35vw;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
+}
+
+.work p {
+    margin: 0;
+    font-weight: bold;
 }
 
 #first {
@@ -99,12 +105,33 @@ article {
     height: auto;
 }
 
+
+#code-refactor {
+    text-align: center;
+    width: 16vw;
+    height: auto;
+}
+
+#refactor {
+    border: 3px outset darkgrey;
+    justify-content: center;
+    margin: 10px;
+    width: 15vw;
+    height: 15vh;
+}
+
+#coming {
+    text-align: center;
+    width: 16vw;
+    height: auto;
+}
+
 .coming-soon {
     border: 3px outset darkgrey;
     justify-content: center;
     margin: 10px;
-    width: 16.25vw;
-    height: auto;
+    width: 15vw;
+    height: 15vh;
 }
 
 #contact-info li {
